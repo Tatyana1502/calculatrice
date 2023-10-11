@@ -12,7 +12,7 @@ for (let nbRows = 0; nbRows <= 3; nbRows++) {
     maTable.appendChild(uneRow);
     for (let nbColumn = 0; nbColumn <= 4; nbColumn++) {
         let uneColumn = document.createElement("td");
-        uneColumn.setAttribute("id", letters[nbColumn] + parseInt(nbRows))
+        // uneColumn.setAttribute("id", letters[nbColumn] + parseInt(nbRows))
         if (nbColumn = 1 && nbRows = 1) {
               uneColumn.classList.add("Numero");
         // uneColumn.setAttribute("id", letters[nbColumn] + parseInt(nbRows))
