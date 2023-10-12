@@ -1,9 +1,16 @@
-// var button = document.querySelector("button");
+let allButtons = document.querySelectorAll("button");
+console.log(allButtons);
+allButtons.forEach(unBouton => {
+    unBouton.addEventListener("click", (clickEvent) => {
+        console.log(clickEvent.target.innerText);
+        document.querySelector(".ecran").innerText += clickEvent.target.innerText;
+    })
+})
 // button.addEventListener("click", function() {console.log("oui")});
 // if (Numero >= 0) {
 // oninput.Number = ecran;
 // }
-var op;
+let op;
 function func() {
     var Rezultat;
     var num1 = Number(document.getElementById(num1).value);
