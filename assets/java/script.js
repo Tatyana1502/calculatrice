@@ -1,42 +1,64 @@
+const saisies = [];
 let allButtons = document.querySelectorAll("button");
 console.log(allButtons);
 allButtons.forEach(unBouton => {
     unBouton.addEventListener("click", (clickEvent) => {
-        console.log(clickEvent.target.innerText);
-        document.querySelector(".ecran").innerText += clickEvent.target.innerText;
+        if (clickEvent.target.innerText != "=") {
+            console.log(clickEvent.target.innerText);
+            saisies.push(clickEvent.target.innerText);
+            document.querySelector(".ecran").innerText += clickEvent.target.innerText;
+            console.log(saisies);
+        } else {
+           let string = "saisies";
+           document.write(eval(string));
+        }
+        
     })
 })
+
 // button.addEventListener("click", function() {console.log("oui")});
 // if (Numero >= 0) {
 // oninput.Number = ecran;
 // }
-let op;
-function func() {
-    var Rezultat;
-    var num1 = Number(document.getElementById(num1).value);
-    var num2 = Number(document.getElementById(num1).value);
-    // var Rezultat = Number(document.getElementById(num1).value);
-    switch (op) {
-        case '+':
-            Rezultat = num1 + num2;
-            break;
-        case '-':
-            Rezultat = num1 - num2;
-            break;
-        case '*':
-            Rezultat = num1 * num2;
-            break; 
-        case '/':
-            Rezultat = num1 / num2;
-            break;  
+    
+
+
+
+
+
+
+
+
+
+// function func() {
+//     let op;
+//     let Rezultat;
+//     let num1 = Number(document.getElementById("num1").value);
+//     let num2 = Number(document.getElementById("num2").value);
+//     // var Rezultat = Number(document.getElementById(num1).value);
+//     switch (op) {
+//         case '+':
+//             Rezultat = num1 + num2;
+//             console.log('${Rezultat}');
+//             break;
+//         case '-':
+//             Rezultat = num1 - num2;
+//             break;
+//         case '*':
+//             Rezultat = num1 * num2;
+//             break; 
+//         case '/':
+//             Rezultat = num1 / num2;
+//             break;  
        
-        // document.getElementById("Rez").innerHTML = ecran;          
-    }
+//         // document.getElementById("Rez").innerHTML = ecran;          
+//     }
+//     console.log('${Rezultat}');   
         //  if (Rezultat <=0) {
         //     //  oninput id="rez.value";
         //  }
-    document.getElementById("Rezultat").innerHTML = Rezultat;
-}
+    // document.getElementById("Rezultat").innerHTML = Rezultat;
+
 
 
 // let maTable = document.createElement("table");
