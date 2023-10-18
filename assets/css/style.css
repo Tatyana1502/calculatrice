@@ -5,9 +5,6 @@
     font-size: 100px;
     background-color: black;
 }
-h1 {
-    text-align: center;
-}
 .ecran {
     min-width: 952px;
     min-height: 352px;
@@ -32,8 +29,6 @@ div {
     justify-content: space-around;
     border-radius: 20px;
 }
-
-
 .autre {
     width: 20%;
     border: 1px solid rgb(18, 17, 17);
@@ -41,8 +36,7 @@ div {
     margin: 10px;
     padding: 10px;
     border-radius: 50px;
-    font-size: 80px;
-    
+    font-size: 80px;    
 }
 .autre:hover {
     color: rgb(192, 28, 28);

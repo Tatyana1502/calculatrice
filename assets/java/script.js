@@ -8,8 +8,7 @@ let allButtons = document.querySelectorAll("button");
 console.log(allButtons);
 allButtons.forEach(unBouton => {
     unBouton.addEventListener("click", (clickEvent) => {
-        if (clickEvent.target.innerText != "=" && clickEvent.target.innerText != "C" && clickEvent.target.innerText != "A2" && clickEvent.target.innerText != "%") {
-            
+        if (clickEvent.target.innerText != "=" && clickEvent.target.innerText != "C" && clickEvent.target.innerText != "A2" && clickEvent.target.innerText != "%") {            
              console.log(clickEvent.target.innerText);
              saisies.push(clickEvent.target.innerText);
              document.querySelector(".ecran").innerText += clickEvent.target.innerText;
@@ -39,7 +38,7 @@ allButtons.forEach(unBouton => {
                              let totalProcent = total/100;
                              document.querySelector(".ecran").innerText = totalProcent;                             
                          }
-                     }// saisies = [];     
+                     }   
                 
             }
      })
