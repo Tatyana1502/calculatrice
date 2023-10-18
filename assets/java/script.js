@@ -9,6 +9,7 @@ console.log(allButtons);
 allButtons.forEach(unBouton => {
     unBouton.addEventListener("click", (clickEvent) => {
         if (clickEvent.target.innerText != "=" && clickEvent.target.innerText != "C" && clickEvent.target.innerText != "A2" && clickEvent.target.innerText != "%") {
+            
              console.log(clickEvent.target.innerText);
              saisies.push(clickEvent.target.innerText);
              document.querySelector(".ecran").innerText += clickEvent.target.innerText;
@@ -32,14 +33,13 @@ allButtons.forEach(unBouton => {
                              let myString2 = total;
                              let asFloat2 =parseFloat(myString2).toFixed(2);
                              console.log(asFloat2);
-                             document.querySelector(".ecran").innerText = asFloat2;
-                         }
+                             document.querySelector(".ecran").innerText = asFloat2;                            
+                            }
                         if (clickEvent.target.innerText == "%") {
                              let totalProcent = total/100;
-                             document.querySelector(".ecran").innerText = totalProcent;
-                        }
-                }
-                    
+                             document.querySelector(".ecran").innerText = totalProcent;                             
+                         }
+                     }// saisies = [];     
                 
             }
      })
